@@ -4,7 +4,7 @@ Personal portfolio for **Milad Shirvan** — Frontend developer, Malmö, Sweden.
 Built with plain HTML, modern CSS and vanilla JavaScript. No build step, no dependencies.
 
 Swiss / brutalist editorial direction: heavy Archivo grotesque type, a concrete-bone
-paper background, asphalt ink, and a hazard-yellow accent. Includes a light/dark theme,
+paper background, near-black ink, and an orange accent (#EF6905). Includes a light/dark theme,
 a rotating "skate wheel" seal, a marquee ticker, and project rows with a cursor-following
 image preview.
 

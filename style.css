@@ -1,11 +1,11 @@
 /* ===== TOKENS ===== */
 :root {
-  --paper: #e4e1d6;
-  --ink: #141410;
-  --accent: #ebe100;
-  --on-accent: #141410;
-  --line: rgba(20, 20, 16, 0.18);
-  --muted: rgba(20, 20, 16, 0.58);
+  --paper: #e7e3d7;
+  --ink: #0a0a0a;
+  --accent: #ef6905;
+  --on-accent: #0a0a0a;
+  --line: rgba(10, 10, 10, 0.18);
+  --muted: rgba(10, 10, 10, 0.56);
 
   --step-hero: clamp(4rem, 20vw, 17rem);
   --step-h2: clamp(2.8rem, 10vw, 8rem);
@@ -20,10 +20,12 @@
 }
 
 [data-theme='dark'] {
-  --paper: #141410;
-  --ink: #e8e5da;
-  --line: rgba(232, 229, 218, 0.2);
-  --muted: rgba(232, 229, 218, 0.55);
+  --paper: #0a0a0a;
+  --ink: #edeae0;
+  --accent: #ef6905;
+  --on-accent: #0a0a0a;
+  --line: rgba(237, 234, 224, 0.18);
+  --muted: rgba(237, 234, 224, 0.52);
 }
 
 * {

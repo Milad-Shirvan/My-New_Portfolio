@@ -91,6 +91,73 @@ strong {
   outline-offset: 3px;
 }
 
+/* ===== PRELOADER ===== */
+.loader {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  background: #0a0a0a;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: clamp(1.5rem, 5vw, 4rem);
+  color: #edeae0;
+  transition: transform 0.9s cubic-bezier(0.76, 0, 0.24, 1);
+}
+.loader.done {
+  transform: translateY(-100%);
+}
+.loader-mark {
+  font-size: 1rem;
+  letter-spacing: 0.04em;
+}
+.loader-count {
+  font-size: clamp(4rem, 18vw, 13rem);
+  font-weight: 700;
+  line-height: 0.8;
+  color: var(--accent);
+}
+.is-loading {
+  overflow: hidden;
+}
+
+/* ===== CUSTOM CURSOR ===== */
+.cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 90;
+  pointer-events: none;
+  mix-blend-mode: difference;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.cursor-dot {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  transform: translate(-50%, -50%) scale(1);
+  transition:
+    width 0.25s ease,
+    height 0.25s ease,
+    background 0.25s ease,
+    transform 0.12s ease;
+}
+.cursor.active .cursor-dot {
+  width: 62px;
+  height: 62px;
+  background: #fff;
+}
+html.has-cursor,
+html.has-cursor a,
+html.has-cursor button {
+  cursor: none;
+}
+
 /* ===== NAV ===== */
 .nav {
   position: sticky;
@@ -227,8 +294,20 @@ strong {
   font-size: var(--step-hero);
   margin: clamp(1.5rem, 4vw, 3rem) 0;
 }
+.hero-title .line-wrap {
+  display: block;
+  overflow: hidden;
+}
 .hero-title .line {
   display: block;
+  transform: translateY(115%);
+  transition: transform 1s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.loaded .hero-title .line {
+  transform: none;
+}
+.loaded .hero-title .line-wrap:nth-child(2) .line {
+  transition-delay: 0.12s;
 }
 .accent-dot {
   color: var(--accent);
@@ -594,6 +673,10 @@ strong {
 .back-top:hover {
   color: var(--ink);
 }
+.clock {
+  color: var(--accent);
+  margin-left: 0.4rem;
+}
 
 /* ===== REVEAL ===== */
 .reveal {
@@ -692,5 +775,15 @@ strong {
     opacity: 1;
     transform: none;
     transition: none;
+  }
+  .hero-title .line {
+    transform: none;
+    transition: none;
+  }
+  .loader {
+    transition: none;
+  }
+  .cursor {
+    display: none;
   }
 }

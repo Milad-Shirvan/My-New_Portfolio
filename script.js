@@ -1,3 +1,36 @@
+// ______ PRELOADER ______
+const body = document.body;
+const loader = document.getElementById('loader');
+const loaderCount = document.getElementById('loaderCount');
+const reduceMotion = window.matchMedia(
+  '(prefers-reduced-motion: reduce)',
+).matches;
+
+function finishLoad() {
+  loader?.classList.add('done');
+  body.classList.remove('is-loading');
+  body.classList.add('loaded');
+}
+
+if (reduceMotion || !loader) {
+  finishLoad();
+} else {
+  let n = 0;
+  const tick = setInterval(() => {
+    n += Math.floor(Math.random() * 8) + 3;
+    if (n >= 100) {
+      n = 100;
+      clearInterval(tick);
+      setTimeout(finishLoad, 250);
+    }
+    loaderCount.textContent = String(n).padStart(3, '0');
+  }, 80);
+  setTimeout(() => {
+    clearInterval(tick);
+    finishLoad();
+  }, 3000);
+}
+
 // ______ THEME TOGGLE ______
 const root = document.documentElement;
 const themeBtn = document.getElementById('themeToggle');
@@ -84,6 +117,46 @@ window.copyEmail = function (btn) {
     }, 1800);
   });
 };
+
+// ______ CUSTOM CURSOR ______
+const cursor = document.getElementById('cursor');
+const finePointer = window.matchMedia('(pointer: fine)').matches;
+
+if (cursor && finePointer && !reduceMotion) {
+  root.classList.add('has-cursor');
+  let cx = 0,
+    cy = 0,
+    tx = 0,
+    ty = 0;
+  window.addEventListener('mousemove', (e) => {
+    tx = e.clientX;
+    ty = e.clientY;
+    cursor.style.opacity = '1';
+  });
+  (function loop() {
+    cx += (tx - cx) * 0.2;
+    cy += (ty - cy) * 0.2;
+    cursor.style.transform = `translate(${cx}px, ${cy}px)`;
+    requestAnimationFrame(loop);
+  })();
+  document.querySelectorAll('a, button, .project').forEach((el) => {
+    el.addEventListener('mouseenter', () => cursor.classList.add('active'));
+    el.addEventListener('mouseleave', () => cursor.classList.remove('active'));
+  });
+}
+
+// ______ MALMÖ CLOCK ______
+const clock = document.getElementById('clock');
+function updateClock() {
+  if (!clock) return;
+  clock.textContent = new Intl.DateTimeFormat('en-GB', {
+    hour: '2-digit',
+    minute: '2-digit',
+    timeZone: 'Europe/Stockholm',
+  }).format(new Date());
+}
+updateClock();
+setInterval(updateClock, 15000);
 
 // ______ FOOTER YEAR ______
 document.getElementById('year').textContent = new Date().getFullYear();

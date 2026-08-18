@@ -9,6 +9,24 @@
       content="Milad Shirvan, frontend developer based in Malmö, Sweden. Clean, functional, accessible web experiences."
     />
 
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <meta name="theme-color" content="#0A0A0A" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Milad Shirvan · Frontend Developer" />
+    <meta
+      property="og:description"
+      content="Frontend developer based in Malmö, Sweden. Clean, functional, accessible web experiences."
+    />
+    <meta property="og:image" content="og-image.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Milad Shirvan · Frontend Developer" />
+    <meta
+      name="twitter:description"
+      content="Frontend developer based in Malmö, Sweden."
+    />
+    <meta name="twitter:image" content="og-image.png" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,7 +36,18 @@
 
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body class="is-loading">
+    <!-- PRELOADER -->
+    <div class="loader" id="loader" aria-hidden="true">
+      <span class="loader-mark mono">MILAD&reg;</span>
+      <span class="loader-count mono" id="loaderCount">000</span>
+    </div>
+
+    <!-- CUSTOM CURSOR -->
+    <div class="cursor" id="cursor" aria-hidden="true">
+      <span class="cursor-dot"></span>
+    </div>
+
     <!-- NAV -->
     <header class="nav">
       <a href="#top" class="wordmark">MILAD<span>&reg;</span></a>
@@ -56,9 +85,13 @@
           <span class="mono status"><i class="dot"></i>Open to work</span>
         </div>
 
-        <h1 class="hero-title reveal">
-          <span class="line">Milad</span>
-          <span class="line">Shirvan<span class="accent-dot">.</span></span>
+        <h1 class="hero-title">
+          <span class="line-wrap"><span class="line">Milad</span></span>
+          <span class="line-wrap"
+            ><span class="line"
+              >Shirvan<span class="accent-dot">.</span></span
+            ></span
+          >
         </h1>
 
         <div class="hero-bottom">
@@ -393,7 +426,9 @@
     <!-- FOOTER -->
     <footer class="footer container-x">
       <span class="mono">© <span id="year"></span> Milad Shirvan</span>
-      <span class="mono">Malmö, Sweden</span>
+      <span class="mono"
+        >Malmö, Sweden <span class="clock" id="clock"></span
+      ></span>
       <a href="#top" class="mono back-top">Back to top ↑</a>
     </footer>
 

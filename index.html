@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Milad Shirvan — Frontend Developer</title>
+    <meta
+      name="description"
+      content="Milad Shirvan — Frontend developer and design student based in Malmö, Sweden. Clean, functional, accessible web experiences."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- NAV -->
+    <header class="nav">
+      <a href="#top" class="wordmark">MILAD<span>&reg;</span></a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="nav-tools">
+        <button
+          id="themeToggle"
+          class="theme-toggle"
+          aria-label="Toggle color theme"
+          aria-pressed="false"
+        >
+          <span class="theme-dot"></span><span class="theme-label">Dark</span>
+        </button>
+        <button
+          id="menuToggle"
+          class="menu-toggle"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+        >
+          <span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <main id="top">
+      <!-- HERO -->
+      <section class="hero container-x" id="hero">
+        <div class="hero-meta">
+          <span class="mono">Portfolio &rsquo;26</span>
+          <span class="mono">Malmö, SE / 55.6°N</span>
+          <span class="mono status"><i class="dot"></i>Open to work</span>
+        </div>
+
+        <h1 class="hero-title reveal">
+          <span class="line">Milad</span>
+          <span class="line">Shirvan<span class="accent-dot">.</span></span>
+        </h1>
+
+        <div class="hero-bottom">
+          <p class="hero-lead reveal">
+            Frontend developer &amp; design student building clean, functional
+            and accessible web experiences — from
+            <strong>Malmö, Sweden</strong>.
+          </p>
+          <div class="hero-actions reveal">
+            <a href="#work" class="btn btn-solid"
+              >View work <span aria-hidden="true">↓</span></a
+            >
+            <a href="CV.pdf" class="btn btn-line" target="_blank" rel="noopener"
+              >Download CV <span aria-hidden="true">↗</span></a
+            >
+          </div>
+        </div>
+
+        <!-- rotating wheel seal -->
+        <div class="seal" aria-hidden="true">
+          <svg viewBox="0 0 200 200">
+            <defs>
+              <path
+                id="circlePath"
+                d="M100,100 m-72,0 a72,72 0 1,1 144,0 a72,72 0 1,1 -144,0"
+              />
+            </defs>
+            <text>
+              <textPath href="#circlePath">
+                AVAILABLE FOR WORK · FRONTEND DEVELOPER · MALMÖ ·
+              </textPath>
+            </text>
+          </svg>
+          <span class="seal-core">✳</span>
+        </div>
+      </section>
+
+      <!-- MARQUEE -->
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee-track">
+          <span
+            >Available for work ✳ Frontend Developer ✳ Malmö, Sweden ✳ Open to
+            opportunities ✳ HTML · CSS · JavaScript · React ✳&nbsp;</span
+          >
+          <span
+            >Available for work ✳ Frontend Developer ✳ Malmö, Sweden ✳ Open to
+            opportunities ✳ HTML · CSS · JavaScript · React ✳&nbsp;</span
+          >
+        </div>
+      </div>
+
+      <!-- WORK -->
+      <section class="work container-x container-y" id="work">
+        <div class="section-head">
+          <span class="mono index">(02)</span>
+          <h2 class="section-title reveal">Selected<br />Work</h2>
+          <span class="mono section-note"
+            >A short index of things I&rsquo;ve built recently.</span
+          >
+        </div>
+
+        <ul class="projects">
+          <li class="project reveal" data-img="images/project-1.png">
+            <a
+              href="https://github.com/Taninwat-55/cinema-booking-system-project"
+              target="_blank"
+              rel="noopener"
+            >
+              <span class="mono p-num">01</span>
+              <span class="p-title">Cinema Booking System</span>
+              <span class="p-tags mono">Team · HTML · CSS · JavaScript</span>
+              <span class="p-go mono">GitHub ↗</span>
+            </a>
+          </li>
+          <li class="project reveal" data-img="images/project-2.png">
+            <a
+              href="https://music-player-pink-gamma.vercel.app/"
+              target="_blank"
+              rel="noopener"
+            >
+              <span class="mono p-num">02</span>
+              <span class="p-title">Lofi Music Player</span>
+              <span class="p-tags mono">React · Glassmorphism · JS</span>
+              <span class="p-go mono">Live ↗</span>
+            </a>
+          </li>
+        </ul>
+        <div class="cursor-preview" aria-hidden="true"><img alt="" /></div>
+      </section>
+
+      <!-- ABOUT -->
+      <section class="about container-x container-y" id="about">
+        <div class="section-head">
+          <span class="mono index">(03)</span>
+          <h2 class="section-title reveal">About</h2>
+        </div>
+
+        <div class="about-grid">
+          <p class="about-statement reveal">
+            I&rsquo;m a frontend development student at Jensen Yrkeshögskola,
+            drawn to interfaces that feel effortless and hold up under real use.
+          </p>
+          <div class="about-body reveal">
+            <p>
+              Currently in my first year, I&rsquo;m sharpening my skills in
+              modern web development and design — with a focus on clean markup,
+              thoughtful layout and accessibility.
+            </p>
+            <p>
+              I&rsquo;m looking for opportunities in tech to gain practical
+              experience alongside my studies. When I&rsquo;m not coding,
+              I&rsquo;m usually chasing design trends or building small projects
+              to push myself further.
+            </p>
+          </div>
+        </div>
+
+        <!-- CAPABILITIES -->
+        <div class="caps">
+          <div class="cap reveal">
+            <span class="mono cap-label">Development</span>
+            <p>
+              HTML, CSS, JavaScript, Responsive Design, React (Vite), Next.js,
+              Tailwind
+            </p>
+          </div>
+          <div class="cap reveal">
+            <span class="mono cap-label">Tools</span>
+            <p>VS Code, Git, Figma, Adobe XD, Procreate</p>
+          </div>
+          <div class="cap reveal">
+            <span class="mono cap-label">Practice</span>
+            <p>API Integration, Testing &amp; Debugging, Version Control</p>
+          </div>
+          <div class="cap reveal">
+            <span class="mono cap-label">Languages</span>
+            <p>Swedish, English, Persian</p>
+          </div>
+        </div>
+
+        <!-- EXPERIENCE -->
+        <div class="timeline">
+          <div class="tl-row reveal">
+            <span class="mono tl-year">2025 — Now</span>
+            <span class="tl-role">Team Project — Jensen Yrkeshögskola</span>
+            <span class="tl-desc mono"
+              >Cinema &amp; movie booking website built with React</span
+            >
+          </div>
+          <div class="tl-row reveal">
+            <span class="mono tl-year">2019 — 2024</span>
+            <span class="tl-role">Personal Projects</span>
+            <span class="tl-desc mono"
+              >Portfolios &amp; small apps to learn and challenge myself</span
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section class="contact container-x container-y" id="contact">
+        <span class="mono index">(04)</span>
+        <h2 class="contact-title reveal">
+          Let&rsquo;s<br />Connect<span class="accent-dot">.</span>
+        </h2>
+
+        <div class="contact-grid">
+          <div class="contact-email reveal">
+            <a href="mailto:milad.b.shirvan@gmail.com" class="email-link"
+              >milad.b.shirvan@gmail.com</a
+            >
+            <button
+              class="btn btn-line copy-btn"
+              onclick="window.copyEmail(this)"
+            >
+              Copy email
+            </button>
+          </div>
+
+          <div class="contact-details reveal">
+            <div class="cd">
+              <span class="mono cap-label">Phone</span>
+              <a href="tel:0729033626">072 903 36 26</a>
+            </div>
+            <div class="cd">
+              <span class="mono cap-label">Location</span>
+              <p>Carlflormans gatan 4, Malmö</p>
+            </div>
+            <div class="cd">
+              <span class="mono cap-label">Social</span>
+              <p class="socials">
+                <a
+                  href="https://github.com/Milad-Shirvan"
+                  target="_blank"
+                  rel="noopener"
+                  >GitHub ↗</a
+                >
+                <a href="https://linkedin.com" target="_blank" rel="noopener"
+                  >LinkedIn ↗</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer container-x">
+      <span class="mono">© <span id="year"></span> Milad Shirvan</span>
+      <span class="mono">Malmö, Sweden</span>
+      <a href="#top" class="mono back-top">Back to top ↑</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

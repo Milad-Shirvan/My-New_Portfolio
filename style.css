@@ -102,7 +102,7 @@ strong {
   justify-content: space-between;
   padding: clamp(1.5rem, 5vw, 4rem);
   color: #edeae0;
-  transition: transform 0.9s cubic-bezier(0.76, 0, 0.24, 1);
+  transition: transform 0.6s cubic-bezier(0.76, 0, 0.24, 1);
 }
 .loader.done {
   transform: translateY(-100%);
@@ -145,7 +145,7 @@ strong {
     width 0.25s ease,
     height 0.25s ease,
     background 0.25s ease,
-    transform 0.12s ease;
+    transform 0.06s ease;
 }
 .cursor.active .cursor-dot {
   width: 62px;

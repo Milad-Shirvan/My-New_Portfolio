@@ -17,18 +17,18 @@ if (reduceMotion || !loader) {
 } else {
   let n = 0;
   const tick = setInterval(() => {
-    n += Math.floor(Math.random() * 8) + 3;
+    n += Math.floor(Math.random() * 12) + 7;
     if (n >= 100) {
       n = 100;
       clearInterval(tick);
-      setTimeout(finishLoad, 250);
+      setTimeout(finishLoad, 120);
     }
     loaderCount.textContent = String(n).padStart(3, '0');
-  }, 80);
+  }, 45);
   setTimeout(() => {
     clearInterval(tick);
     finishLoad();
-  }, 3000);
+  }, 1600);
 }
 
 // ______ THEME TOGGLE ______
@@ -134,8 +134,8 @@ if (cursor && finePointer && !reduceMotion) {
     cursor.style.opacity = '1';
   });
   (function loop() {
-    cx += (tx - cx) * 0.2;
-    cy += (ty - cy) * 0.2;
+    cx += (tx - cx) * 0.35;
+    cy += (ty - cy) * 0.35;
     cursor.style.transform = `translate(${cx}px, ${cy}px)`;
     requestAnimationFrame(loop);
   })();

@@ -72,26 +72,6 @@ const navObserver = new IntersectionObserver(
 );
 sections.forEach((s) => navObserver.observe(s));
 
-// ______ PROJECT CURSOR PREVIEW ______
-const preview = document.querySelector('.cursor-preview');
-const previewImg = preview?.querySelector('img');
-const finePointer = window.matchMedia('(pointer: fine)').matches;
-
-if (finePointer && preview) {
-  previewImg.addEventListener('error', () => preview.classList.remove('show'));
-  document.querySelectorAll('.project').forEach((item) => {
-    item.addEventListener('mouseenter', () => {
-      previewImg.src = item.dataset.img;
-      preview.classList.add('show');
-    });
-    item.addEventListener('mouseleave', () => preview.classList.remove('show'));
-  });
-  window.addEventListener('mousemove', (e) => {
-    preview.style.left = e.clientX + 'px';
-    preview.style.top = e.clientY + 'px';
-  });
-}
-
 // ______ COPY EMAIL ______
 window.copyEmail = function (btn) {
   navigator.clipboard.writeText('milad.b.shirvan@gmail.com').then(() => {

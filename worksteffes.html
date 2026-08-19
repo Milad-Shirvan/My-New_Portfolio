@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Steffes Schakt · Case Study · Milad Shirvan</title>
+    <meta
+      name="description"
+      content="Case study: a responsive CMS-driven marketing and recruitment site for Steffes Schakt AB, a Stockholm groundwork contractor. Frontend by Milad Shirvan."
+    />
+
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <meta name="theme-color" content="#0A0A0A" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- CUSTOM CURSOR -->
+    <div class="cursor" id="cursor" aria-hidden="true">
+      <span class="cursor-dot"></span>
+    </div>
+
+    <!-- NAV -->
+    <header class="nav">
+      <a href="index.html" class="wordmark">MILAD<span>&reg;</span></a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html#work">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+      <div class="nav-tools">
+        <button
+          id="themeToggle"
+          class="theme-toggle"
+          aria-label="Toggle color theme"
+          aria-pressed="false"
+        >
+          <span class="theme-dot"></span><span class="theme-label">Dark</span>
+        </button>
+        <button
+          id="menuToggle"
+          class="menu-toggle"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+        >
+          <span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <main id="top" class="container-x container-y">
+      <a href="index.html#work" class="mono case-back">← Back to work</a>
+
+      <!-- CASE HERO -->
+      <span class="mono case-eyebrow reveal">Case study / (01)</span>
+      <h1 class="case-title reveal">Steffes Schakt</h1>
+      <p class="case-summary reveal">
+        A responsive marketing and recruitment site for a Stockholm groundwork
+        contractor, built in a CMS so the team can manage it themselves.
+      </p>
+
+      <div class="case-meta reveal">
+        <div>
+          <span class="mono m-label">Role</span
+          ><span class="m-value">Frontend Developer</span>
+        </div>
+        <div>
+          <span class="mono m-label">Client</span
+          ><span class="m-value">Steffes Schakt AB, via Webblix</span>
+        </div>
+        <div>
+          <span class="mono m-label">Year</span
+          ><span class="m-value">2026</span>
+        </div>
+        <div>
+          <span class="mono m-label">Stack</span
+          ><span class="m-value">CMS · HTML · CSS · JS</span>
+        </div>
+      </div>
+
+      <a
+        href="https://steffesschakt.se/"
+        target="_blank"
+        rel="noopener"
+        class="btn btn-solid case-visit"
+        >Visit live site <span aria-hidden="true">↗</span></a
+      >
+
+      <!-- HERO IMAGE -->
+      <figure class="case-figure reveal">
+        <img
+          src="images/steffesschakt.png"
+          alt="Steffes Schakt website"
+          loading="lazy"
+        />
+      </figure>
+
+      <!-- OVERVIEW -->
+      <section class="case-section">
+        <span class="mono s-label">Overview</span>
+        <div class="s-body">
+          <p class="case-lead reveal">
+            Steffes Schakt AB has run groundwork and excavation projects across
+            Stockholm since 1993, specialising in long-reach excavators.
+          </p>
+          <p class="reveal">
+            Their work spans water and sewage (VA), infrastructure, dredging and
+            remediation. They needed a modern, responsive website that presents
+            their services and machine park clearly, builds trust with larger
+            clients, and helps attract new operators through job listings, all
+            editable by the team without a developer.
+          </p>
+        </div>
+      </section>
+
+      <!-- CHALLENGE -->
+      <section class="case-section">
+        <span class="mono s-label">The challenge</span>
+        <div class="s-body reveal">
+          <p>
+            The content is varied: four service categories, a large fleet of
+            machines each with its own reach and tonnage, partner logos, a
+            careers area and a contact flow. It all had to stay easy to scan on
+            a phone out in the field, load quickly with a lot of photography,
+            and be manageable through a CMS so the client could update machines
+            and open positions on their own.
+          </p>
+        </div>
+      </section>
+
+      <!-- WHAT I BUILT -->
+      <section class="case-section">
+        <span class="mono s-label">What I built</span>
+        <div class="s-body">
+          <ol class="case-steps">
+            <li class="case-step reveal">
+              <span class="mono st-num">01</span>
+              <div>
+                <h3>Responsive frontend</h3>
+                <p>
+                  Built the full layout from the design so that long headings,
+                  service cards and the machine gallery reflow cleanly from wide
+                  desktop down to mobile.
+                </p>
+              </div>
+            </li>
+            <li class="case-step reveal">
+              <span class="mono st-num">02</span>
+              <div>
+                <h3>Services &amp; company story</h3>
+                <p>
+                  Structured the four service areas (VA, infrastructure,
+                  dredging, remediation) and the company history into clear,
+                  scannable sections with a consistent visual rhythm.
+                </p>
+              </div>
+            </li>
+            <li class="case-step reveal">
+              <span class="mono st-num">03</span>
+              <div>
+                <h3>Machine-park gallery</h3>
+                <p>
+                  Implemented the machine park as a filterable gallery, each
+                  excavator type paired with its own photo and reach and tonnage
+                  spec, so clients can quickly find the right machine for a job.
+                </p>
+              </div>
+            </li>
+            <li class="case-step reveal">
+              <span class="mono st-num">04</span>
+              <div>
+                <h3>Contact form with custom success state</h3>
+                <p>
+                  Wired up the enquiry form with GDPR consent and replaced the
+                  default submit message with a custom confirmation popup, so
+                  people get clear feedback that their message was received.
+                </p>
+              </div>
+            </li>
+            <li class="case-step reveal">
+              <span class="mono st-num">05</span>
+              <div>
+                <h3>Performance &amp; accessibility</h3>
+                <p>
+                  Kept the build lightweight: semantic markup,
+                  keyboard-navigable components, and optimised, lazy-loaded
+                  images so the site stays fast despite heavy photography.
+                </p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- OUTCOME -->
+      <section class="case-section">
+        <span class="mono s-label">Outcome</span>
+        <div class="s-body reveal">
+          <p>
+            The result is a clean, professional presence that reflects more than
+            30 years of experience, makes the service range and fleet easy to
+            understand, and gives the team a CMS they can keep up to date on
+            their own.
+          </p>
+          <p class="case-note">
+            <strong>Note to self:</strong> add real results here if you have
+            them, for example load-time or Lighthouse scores, a jump in
+            enquiries, or a quote from the client or your supervisor at Webblix.
+            Concrete numbers make this section land.
+          </p>
+        </div>
+      </section>
+
+      <!-- NEXT -->
+      <a
+        href="https://www.power-hub.se/"
+        target="_blank"
+        rel="noopener"
+        class="case-next"
+      >
+        <span class="mono n-lead">Next project ↗</span>
+        <span class="n-title">Power Hub</span>
+      </a>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer container-x">
+      <span class="mono">© <span id="year"></span> Milad Shirvan</span>
+      <span class="mono"
+        >Malmö, Sweden <span class="clock" id="clock"></span
+      ></span>
+      <a href="#top" class="mono back-top">Back to top ↑</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

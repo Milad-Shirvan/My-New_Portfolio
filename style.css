@@ -603,6 +603,144 @@ html.has-cursor button {
   color: var(--muted);
 }
 
+/* ===== CASE STUDY ===== */
+.case-back {
+  display: inline-block;
+  color: var(--muted);
+  margin-bottom: clamp(2rem, 5vw, 3.5rem);
+}
+.case-back:hover {
+  color: var(--accent);
+}
+.case-eyebrow {
+  color: var(--muted);
+  display: block;
+  margin-bottom: 1.2rem;
+}
+.case-title {
+  font-size: var(--step-h2);
+  margin-bottom: 1.5rem;
+}
+.case-summary {
+  font-size: var(--step-lead);
+  font-weight: 500;
+  max-width: 30ch;
+  line-height: 1.25;
+}
+
+.case-meta {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--gap);
+  margin-top: clamp(2.5rem, 6vw, 4rem);
+  padding-top: clamp(1.5rem, 4vw, 2.5rem);
+  border-top: 1px solid var(--line);
+}
+.case-meta .m-label {
+  color: var(--muted);
+  display: block;
+  margin-bottom: 0.5rem;
+}
+.case-meta .m-value {
+  font-weight: 600;
+}
+.case-visit {
+  display: inline-flex;
+  margin-top: clamp(2rem, 5vw, 3rem);
+}
+
+.case-figure {
+  margin: clamp(3rem, 8vw, 6rem) 0;
+  border: 1px solid var(--line);
+  overflow: hidden;
+}
+.case-figure img {
+  width: 100%;
+  display: block;
+}
+
+.case-section {
+  display: grid;
+  grid-template-columns: minmax(0, 14rem) 1fr;
+  gap: clamp(1rem, 4vw, 3rem);
+  padding: clamp(2.5rem, 6vw, 4rem) 0;
+  border-top: 1px solid var(--line);
+}
+.case-section .s-label {
+  color: var(--muted);
+  align-self: start;
+}
+.case-section .s-body {
+  max-width: 60ch;
+}
+.case-section .s-body p {
+  margin-bottom: 1rem;
+}
+.case-section .s-body p:last-child {
+  margin-bottom: 0;
+}
+.case-lead {
+  font-size: clamp(1.2rem, 2.4vw, 1.7rem);
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.case-steps {
+  list-style: none;
+  display: grid;
+  gap: 2rem;
+}
+.case-step {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1.5rem;
+}
+.case-step .st-num {
+  color: var(--accent);
+  font-weight: 700;
+}
+.case-step h3 {
+  font-size: clamp(1.1rem, 2vw, 1.4rem);
+  font-weight: 800;
+  margin-bottom: 0.4rem;
+}
+.case-step p {
+  color: var(--muted);
+}
+
+.case-note {
+  border: 1px dashed var(--line);
+  padding: 1.5rem;
+  margin-top: 1.5rem;
+  color: var(--muted);
+}
+.case-note strong {
+  color: var(--ink);
+  font-weight: 700;
+}
+
+.case-next {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1.5rem;
+  align-items: baseline;
+  padding: clamp(2.5rem, 6vw, 4rem) 0;
+  border-top: 1px solid var(--line);
+}
+.case-next .n-lead {
+  color: var(--muted);
+}
+.case-next .n-title {
+  font-size: var(--step-project);
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  transition: color 0.3s ease;
+}
+.case-next a:hover .n-title {
+  color: var(--accent);
+}
+
 /* ===== CONTACT ===== */
 .contact {
   position: relative;
@@ -724,6 +862,13 @@ html.has-cursor button {
   .p-thumb {
     width: 100%;
     max-width: 320px;
+  }
+  .case-meta {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .case-section {
+    grid-template-columns: 1fr;
+    gap: 1rem;
   }
 }
 

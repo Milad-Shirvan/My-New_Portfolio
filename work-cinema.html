@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cinema Booking System · Case Study · Milad Shirvan</title>
+    <meta
+      name="description"
+      content="Case study: a collaborative full-stack cinema booking system with seat selection, authentication and an admin panel. Frontend by Milad Shirvan."
+    />
+
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <meta name="theme-color" content="#0A0A0A" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="cursor" id="cursor" aria-hidden="true">
+      <span class="cursor-dot"></span>
+    </div>
+
+    <header class="nav">
+      <a href="index.html" class="wordmark">MILAD<span>&reg;</span></a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html#work">Work</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+      <div class="nav-tools">
+        <button
+          id="themeToggle"
+          class="theme-toggle"
+          aria-label="Toggle color theme"
+          aria-pressed="false"
+        >
+          <span class="theme-dot"></span><span class="theme-label">Dark</span>
+        </button>
+        <button
+          id="menuToggle"
+          class="menu-toggle"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+        >
+          <span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <main id="top" class="container-x container-y">
+      <a href="index.html#work" class="mono case-back">← Back to work</a>
+
+      <span class="mono case-eyebrow reveal">Case study / (04)</span>
+      <h1 class="case-title reveal">Cinema Booking System</h1>
+      <p class="case-summary reveal">
+        A collaborative full-stack project: browse films, pick seats and book
+        tickets, with authentication and an admin panel behind it.
+      </p>
+
+      <div class="case-meta reveal">
+        <div>
+          <span class="mono m-label">Role</span
+          ><span class="m-value">Frontend &amp; architecture</span>
+        </div>
+        <div>
+          <span class="mono m-label">Type</span
+          ><span class="m-value">Team project</span>
+        </div>
+        <div>
+          <span class="mono m-label">Year</span
+          ><span class="m-value">2025</span>
+        </div>
+        <div>
+          <span class="mono m-label">Stack</span
+          ><span class="m-value">React · HTML · CSS · JS</span>
+        </div>
+      </div>
+
+      <a
+        href="https://github.com/Taninwat-55/cinema-booking-system-project"
+        target="_blank"
+        rel="noopener"
+        class="btn btn-solid case-visit"
+        >View on GitHub <span aria-hidden="true">↗</span></a
+      >
+
+      <figure class="case-figure reveal">
+        <img
+          src="images/cinemabooking.png"
+          alt="Cinema Booking System"
+          loading="lazy"
+        />
+      </figure>
+
+      <section class="case-section">
+        <span class="mono s-label">Overview</span>
+        <div class="s-body">
+          <p class="case-lead reveal">
+            A full-stack cinema booking app built with a team, where users
+            browse films, choose their seats and book tickets end to end.
+          </p>
+          <p class="reveal">
+            Beyond the booking flow, the system includes user authentication and
+            an admin panel for managing films and screenings. It was a chance to
+            work the way real teams do: shared codebase, version control and
+            features split across several people.
+          </p>
+        </div>
+      </section>
+
+      <section class="case-section">
+        <span class="mono s-label">The challenge</span>
+        <div class="s-body reveal">
+          <p>
+            The hardest part was the seat selection: it needed to feel
+            immediate, prevent double-booking, and stay in sync with the
+            backend. On top of that, building as a team meant keeping components
+            consistent and merging everyone's work cleanly through Git.
+          </p>
+        </div>
+      </section>
+
+      <section class="case-section">
+        <span class="mono s-label">What I did</span>
+        <div class="s-body">
+          <ol class="case-steps">
+            <li class="case-step reveal">
+              <span class="mono st-num">01</span>
+              <div>
+                <h3>Frontend components</h3>
+                <p>
+                  Contributed React components for browsing films and the
+                  booking flow, keeping the interface consistent across the app.
+                </p>
+              </div>
+            </li>
+            <li class="case-step reveal">
+              <span class="mono st-num">02</span>
+              <div>
+                <h3>Seat selection &amp; booking</h3>
+                <p>
+                  Worked on the interactive seat-picking and booking experience,
+                  wiring the UI up to the booking data.
+                </p>
+              </div>
+            </li>
+            <li class="case-step reveal">
+              <span class="mono st-num">03</span>
+              <div>
+                <h3>Overall architecture</h3>
+                <p>
+                  Helped shape the overall structure of the app and how features
+                  fit together across the team.
+                </p>
+              </div>
+            </li>
+            <li class="case-step reveal">
+              <span class="mono st-num">04</span>
+              <div>
+                <h3>Collaboration in Git</h3>
+                <p>
+                  Worked in a shared repository with branches, reviews and
+                  merges, practising the workflow used on real teams.
+                </p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="case-section">
+        <span class="mono s-label">Outcome</span>
+        <div class="s-body reveal">
+          <p>
+            A working booking system that covers the full journey from film to
+            confirmed seat, and my first real taste of building a larger app
+            collaboratively rather than solo.
+          </p>
+          <p class="case-note">
+            <strong>Note to self:</strong> tighten the exact split of who built
+            what, and add anything you are proud of here, for example a tricky
+            bug you solved or what you learned about teamwork. Make sure the
+            role claims match what you actually did.
+          </p>
+        </div>
+      </section>
+
+      <a href="work-lofi.html" class="case-next">
+        <span class="mono n-lead">Next project →</span>
+        <span class="n-title">Lofi Music Player</span>
+      </a>
+    </main>
+
+    <footer class="footer container-x">
+      <span class="mono">© <span id="year"></span> Milad Shirvan</span>
+      <span class="mono"
+        >Malmö, Sweden <span class="clock" id="clock"></span
+      ></span>
+      <a href="#top" class="mono back-top">Back to top ↑</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

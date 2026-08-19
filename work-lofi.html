@@ -1,130 +1,195 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" data-theme="light">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lofi Music Player · Case Study · Milad Shirvan</title>
-  <meta name="description" content="Case study: a React lofi music player with a glassmorphism interface, built to sharpen component and state skills. By Milad Shirvan." />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lofi Music Player · Case Study · Milad Shirvan</title>
+    <meta
+      name="description"
+      content="Case study: a React lofi music player with a glassmorphism interface, built to sharpen component and state skills. By Milad Shirvan."
+    />
 
-  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-  <meta name="theme-color" content="#0A0A0A" />
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+    <meta name="theme-color" content="#0A0A0A" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-
-  <div class="cursor" id="cursor" aria-hidden="true"><span class="cursor-dot"></span></div>
-
-  <header class="nav">
-    <a href="index.html" class="wordmark">MILAD<span>&reg;</span></a>
-    <nav class="nav-links" aria-label="Primary">
-      <a href="index.html#work">Work</a>
-      <a href="index.html#about">About</a>
-      <a href="index.html#contact">Contact</a>
-    </nav>
-    <div class="nav-tools">
-      <button id="themeToggle" class="theme-toggle" aria-label="Toggle color theme" aria-pressed="false">
-        <span class="theme-dot"></span><span class="theme-label">Dark</span>
-      </button>
-      <button id="menuToggle" class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
-        <span></span><span></span>
-      </button>
-    </div>
-  </header>
-
-  <main id="top" class="container-x container-y">
-
-    <a href="index.html#work" class="mono case-back">← Back to work</a>
-
-    <span class="mono case-eyebrow reveal">Case study / (05)</span>
-    <h1 class="case-title reveal">Lofi Music Player</h1>
-    <p class="case-summary reveal">
-      A personal React project: a calm, glassmorphism music player built to
-      sharpen my component and state skills.
-    </p>
-
-    <div class="case-meta reveal">
-      <div><span class="mono m-label">Role</span><span class="m-value">Solo build</span></div>
-      <div><span class="mono m-label">Type</span><span class="m-value">Personal project</span></div>
-      <div><span class="mono m-label">Year</span><span class="m-value">2025</span></div>
-      <div><span class="mono m-label">Stack</span><span class="m-value">React · JS · CSS</span></div>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="cursor" id="cursor" aria-hidden="true">
+      <span class="cursor-dot"></span>
     </div>
 
-    <a href="https://music-player-pink-gamma.vercel.app/" target="_blank" rel="noopener" class="btn btn-solid case-visit">View live demo <span aria-hidden="true">↗</span></a>
-
-    <figure class="case-figure reveal">
-      <img src="images/Lofi.png" alt="Lofi Music Player" loading="lazy" />
-    </figure>
-
-    <section class="case-section">
-      <span class="mono s-label">Overview</span>
-      <div class="s-body">
-        <p class="case-lead reveal">A lofi music player with a soft, glassmorphism interface, made for playing relaxed tracks in a calm, focused space.</p>
-        <p class="reveal">I built it as a personal project to get more comfortable with React fundamentals, handling audio playback, and translating a specific visual style into a real, interactive interface.</p>
+    <header class="nav">
+      <a href="index.html" class="wordmark">MILAD<span>&reg;</span></a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html#work">Work</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+      <div class="nav-tools">
+        <button
+          id="themeToggle"
+          class="theme-toggle"
+          aria-label="Toggle color theme"
+          aria-pressed="false"
+        >
+          <span class="theme-dot"></span><span class="theme-label">Dark</span>
+        </button>
+        <button
+          id="menuToggle"
+          class="menu-toggle"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+        >
+          <span></span><span></span>
+        </button>
       </div>
-    </section>
+    </header>
 
-    <section class="case-section">
-      <span class="mono s-label">The challenge</span>
-      <div class="s-body reveal">
-        <p>Two things to get right: managing audio state (play, pause, track changes) cleanly in React without the UI drifting out of sync, and pulling off the glassmorphism look, with its blur and transparency, so it felt polished rather than muddy.</p>
+    <main id="top" class="container-x container-y">
+      <a href="index.html#work" class="mono case-back">← Back to work</a>
+
+      <span class="mono case-eyebrow reveal">Case study / (05)</span>
+      <h1 class="case-title reveal">Lofi Music Player</h1>
+      <p class="case-summary reveal">
+        A personal React project: a calm, glassmorphism music player built to
+        sharpen my component and state skills.
+      </p>
+
+      <div class="case-meta reveal">
+        <div>
+          <span class="mono m-label">Role</span
+          ><span class="m-value">Solo build</span>
+        </div>
+        <div>
+          <span class="mono m-label">Type</span
+          ><span class="m-value">Personal project</span>
+        </div>
+        <div>
+          <span class="mono m-label">Year</span
+          ><span class="m-value">2025</span>
+        </div>
+        <div>
+          <span class="mono m-label">Stack</span
+          ><span class="m-value">React · JS · CSS</span>
+        </div>
       </div>
-    </section>
 
-    <section class="case-section">
-      <span class="mono s-label">What I built</span>
-      <div class="s-body">
-        <ol class="case-steps">
-          <li class="case-step reveal">
-            <span class="mono st-num">01</span>
-            <div>
-              <h3>Audio player in React</h3>
-              <p>Built the playback controls and track handling with React state, keeping the interface in sync with what is actually playing.</p>
-            </div>
-          </li>
-          <li class="case-step reveal">
-            <span class="mono st-num">02</span>
-            <div>
-              <h3>Glassmorphism UI</h3>
-              <p>Recreated the frosted-glass aesthetic with layered blur, transparency and soft lighting for a calm, modern feel.</p>
-            </div>
-          </li>
-          <li class="case-step reveal">
-            <span class="mono st-num">03</span>
-            <div>
-              <h3>Component structure</h3>
-              <p>Broke the interface into reusable components to keep the code tidy and easy to extend.</p>
-            </div>
-          </li>
-        </ol>
-      </div>
-    </section>
+      <a
+        href="https://music-player-pink-gamma.vercel.app/"
+        target="_blank"
+        rel="noopener"
+        class="btn btn-solid case-visit"
+        >View live demo <span aria-hidden="true">↗</span></a
+      >
 
-    <section class="case-section">
-      <span class="mono s-label">Outcome</span>
-      <div class="s-body reveal">
-        <p>A small but complete player that does one thing nicely, and a project that made React state and styling click for me in a way tutorials alone had not.</p>
-        <p class="case-note"><strong>Note to self:</strong> add anything you would improve next, for example a playlist, keyboard controls or a visualiser. Showing what you would do next reads well to interviewers.</p>
-      </div>
-    </section>
+      <figure class="case-figure reveal">
+        <img src="images/Lofi.png" alt="Lofi Music Player" loading="lazy" />
+      </figure>
 
-    <a href="index.html#work" class="case-next">
-      <span class="mono n-lead">Back to ↗</span>
-      <span class="n-title">All work</span>
-    </a>
+      <section class="case-section">
+        <span class="mono s-label">Overview</span>
+        <div class="s-body">
+          <p class="case-lead reveal">
+            A lofi music player with a soft, glassmorphism interface, made for
+            playing relaxed tracks in a calm, focused space.
+          </p>
+          <p class="reveal">
+            I built it as a personal project to get more comfortable with React
+            fundamentals, handling audio playback, and translating a specific
+            visual style into a real, interactive interface.
+          </p>
+        </div>
+      </section>
 
-  </main>
+      <section class="case-section">
+        <span class="mono s-label">The challenge</span>
+        <div class="s-body reveal">
+          <p>
+            Two things to get right: managing audio state (play, pause, track
+            changes) cleanly in React without the UI drifting out of sync, and
+            pulling off the glassmorphism look, with its blur and transparency,
+            so it felt polished rather than muddy.
+          </p>
+        </div>
+      </section>
 
-  <footer class="footer container-x">
-    <span class="mono">© <span id="year"></span> Milad Shirvan</span>
-    <span class="mono">Malmö, Sweden <span class="clock" id="clock"></span></span>
-    <a href="#top" class="mono back-top">Back to top ↑</a>
-  </footer>
+      <section class="case-section">
+        <span class="mono s-label">What I built</span>
+        <div class="s-body">
+          <ol class="case-steps">
+            <li class="case-step reveal">
+              <span class="mono st-num">01</span>
+              <div>
+                <h3>Audio player in React</h3>
+                <p>
+                  Built the playback controls and track handling with React
+                  state, keeping the interface in sync with what is actually
+                  playing.
+                </p>
+              </div>
+            </li>
+            <li class="case-step reveal">
+              <span class="mono st-num">02</span>
+              <div>
+                <h3>Glassmorphism UI</h3>
+                <p>
+                  Recreated the frosted-glass aesthetic with layered blur,
+                  transparency and soft lighting for a calm, modern feel.
+                </p>
+              </div>
+            </li>
+            <li class="case-step reveal">
+              <span class="mono st-num">03</span>
+              <div>
+                <h3>Component structure</h3>
+                <p>
+                  Broke the interface into reusable components to keep the code
+                  tidy and easy to extend.
+                </p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
 
-  <script src="script.js"></script>
-</body>
+      <section class="case-section">
+        <span class="mono s-label">Outcome</span>
+        <div class="s-body reveal">
+          <p>
+            A small but complete player that does one thing nicely, and a
+            project that made React state and styling click for me in a way
+            tutorials alone had not.
+          </p>
+          <p class="case-note">
+            <strong>Note to self:</strong> add anything you would improve next,
+            for example a playlist, keyboard controls or a visualiser. Showing
+            what you would do next reads well to interviewers.
+          </p>
+        </div>
+      </section>
+
+      <a href="index.html#Home" class="case-next">
+        <span class="mono n-lead">Back to ↗</span>
+        <span class="n-title">Home</span>
+      </a>
+    </main>
+
+    <footer class="footer container-x">
+      <span class="mono">© <span id="year"></span> Milad Shirvan</span>
+      <span class="mono"
+        >Malmö, Sweden <span class="clock" id="clock"></span
+      ></span>
+      <a href="#top" class="mono back-top">Back to top ↑</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>
